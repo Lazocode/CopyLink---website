@@ -17,26 +17,6 @@ contatos.html — Informações de contato, endereço e horário de funcionament
 HTML5
 CSS3 (Mobile First) 
 
-
-📁 Estrutura de Pastas
-CopyLink/
-├── index.html
-└── src/
-    └── components/
-        ├── assets/
-        │   └── images/
-        │       ├── backinit.jpg
-        │       └── logo-copylink.png
-        ├── css/
-        │   ├── reset.css
-        │   ├── style.css
-        │   ├── hero.css
-        │   ├── servicos.css
-        │   └── contato.css
-        └── pages/
-           ├── contatos.html
-           ├── servicos.html
-
 📱 Responsividade
 O projeto foi desenvolvido com a metodologia Mobile First, garantindo uma boa experiência em todos os dispositivos:
 
