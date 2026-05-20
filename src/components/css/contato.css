@@ -1,0 +1,104 @@
+:root {
+    --laranja: #E8732A;
+    --verde: #8DC63F;
+    --escuro: #3D3D3D;
+    --branco: #FFFFFF;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #111;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 32px;
+    background-color: transparent;
+}
+
+.contato .label {
+    font-size: 0.75rem;
+    color: var(--laranja);
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+}
+
+.branco { color: var(--branco); }
+.laranja { color: var(--laranja); }
+.verde { color: var(--verde); }
+
+.contato-esquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contato-esquerda h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.contato-esquerda p {
+    font-size: 0.9rem;
+    color: #aaa;
+    line-height: 1.7;
+}
+
+.contato-direita {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.info-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background: transparent !important;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.info-icone {
+    font-size: 1.5rem;
+    color: var(--laranja);
+    margin-top: 2px;
+}
+
+.info-card strong {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--branco);
+    letter-spacing: 0.05rem;
+    margin-bottom: 4px;
+}
+
+.info-card p {
+    font-size: 0.85rem;
+    color: #aaa;
+    line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+    .contato {
+        padding: 60px 40px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .contato {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 80px 60px;
+    }
+
+    .contato-esquerda h2 {
+        font-size: 2.5rem;
+    }
+}

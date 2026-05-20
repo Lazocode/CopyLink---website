@@ -1,0 +1,159 @@
+:root {
+    --laranja: #E8732A;
+    --verde: #8DC63F;
+    --escuro: #3D3D3D;
+    --branco: #FFFFFF;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.servicos {
+    padding: 48px 20px;
+    text-align: center;
+    background: transparent;
+}
+
+.servicos .label {
+    font-size: 0.75rem;
+    color: var(--laranja);
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+}
+
+.servicos h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 8px 0 12px;
+    text-transform: uppercase;
+}
+
+.verde { color: var(--verde); }
+
+.servicos h2 .branco {
+    color: #fff;
+}
+
+.servicos-desc {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-bottom: 32px;
+    line-height: 1.6;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.cardA {
+    background: var(--laranja);
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 16px 12px;
+    text-align: left;
+}
+
+.cardB {
+    background: var(--verde);
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 16px 12px;
+    text-align: left;
+}
+
+.cardA .icone, .cardB .icone {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 8px;
+    color: var(--laranja);   
+}
+
+.cardA h3, .cardB h3 {
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: #111;
+    margin-bottom: 6px;
+}
+
+.cardA p, .cardB p {
+    font-family: Georgia, serif;
+    font-size: 0.77rem;
+    color: #111;
+    line-height: 1.5;
+    letter-spacing: 0.01rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn-whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #25D366;
+    color: var(--branco);
+    padding: 14px 24px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 24px;
+}
+
+@media (min-width: 768px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .servicos {
+       padding: 64px 40px;
+    }
+
+    .servicos h2 {
+        font-size: 2.5rem;
+    }
+
+    .servicos-desc {
+        max-width: 700px;
+        margin: 0 auto 32px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+        padding: 0 20px;
+    }
+
+    .cardA, .cardB {
+        padding: 20px 16px;
+        width: 100%;
+    }
+
+    .cardA h3, .cardB h3 {
+        font-size: 0.95rem;
+    }
+
+    .cardA p, .cardB p {
+        font-size: 0.8rem;
+    }
+    
+    .btn-whatsapp {
+        width: fit-content !important;
+        padding: 14px 48px;
+        margin-top: 32px;
+        align-self: center;
+    }
+}
