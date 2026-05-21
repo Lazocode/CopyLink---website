@@ -1,14 +1,3 @@
-:root {
-    --laranja: #E8732A;
-    --verde: #8DC63F;
-    --escuro: #3D3D3D;
-    --branco: #FFFFFF;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #111;
-}
 
 .contato {
     display: flex;
